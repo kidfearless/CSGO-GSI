@@ -35,5 +35,5 @@ Copy Pastable Spinbot Values
 `sensitivity 2; m_yaw 90.011`
 `sensitivity 2.5; m_yaw 72.0088` default csgo sensitivity
 `sensitivity 4; m_yaw 45.0055`
-
+Link to the bind in action: https://youtu.be/3NGBxfQDBHo?t=20
 Link to my banned profile: https://steamcommunity.com/id/kidfearless/
