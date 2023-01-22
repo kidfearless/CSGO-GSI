@@ -24,16 +24,25 @@ A direct flashbang will last a little more than 5 seconds total, most of this is
 
 ### side note
 If you like this project I would very much so appreciate people spreading the word about two convars in the game that can get you banned by overwatch without any way to resolve them. These two are the `sensitivity` and `m_yaw` convars. As most people know the sensitivity convar is a multiplier for what csgo receives from your mouse. But m_yaw and m_pitch are the horizontal and vertical multiplies added on top of that. For most people using raw input on and mouse acceleration off, and not using a scoped weapon, then these are the only two modifiers for your mouse movement. The m_yaw and sensitivity products result in the total degrees you move your mouse horizontally. So if you move 1 "pixel" on your screen then the total number of degrees you move would look something like `1 px * 0.022 m_yaw * 1 sensitivity = 0.022 degree change`. This is where things get dangerous as the max value for m_yaw is set high at 1000. So using some simple math we can set our m_yaw to be a full 180 degrees by just entering `m_yaw 180` in console with a sensitivity of 1. You can't really aim like that though but when you move your mouse you will see the front and back of your view overlaying on each other. And if we look above we can see that our default is 0.022 m_yaw so now all we need to do is make sure that our m_yaw times our sensitivity equals 180.022. This gives us the ability to spin at ridiculously high rates but still be able to aim normally. Although roughly half your shots will go behind you.
+
 I used this in a comp match when valve put me against some lower ranked players and quickly got banned by overwatch. With my appeal denied I'd like to share this knowledge with the community in hopes that valve will eventually repeal my ban. Valvo pls fix.
 
 Formula for finding your m_yaw
+
 180.022 / sensitivity = m_yaw
 
 Copy Pastable Spinbot Values
+
 `sensitivity 1; m_yaw 180.022`
+
 `sensitivity 1.5; m_yaw 120.01466`
+
 `sensitivity 2; m_yaw 90.011`
+
 `sensitivity 2.5; m_yaw 72.0088` default csgo sensitivity
+
 `sensitivity 4; m_yaw 45.0055`
+
 Link to the bind in action: https://youtu.be/3NGBxfQDBHo?t=20
+
 Link to my banned profile: https://steamcommunity.com/id/kidfearless/
